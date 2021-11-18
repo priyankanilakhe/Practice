@@ -1,0 +1,10 @@
+package Medium.Array;
+
+public class NumberOfIslands {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

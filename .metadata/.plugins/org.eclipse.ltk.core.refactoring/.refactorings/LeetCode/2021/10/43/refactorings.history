@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;String.StringReverse&apos; to &apos;StringReverseWithoutSpecialCharacter&apos;&#x0D;&#x0A;- Original project: &apos;LeetCode&apos;&#x0D;&#x0A;- Original element: &apos;String.StringReverse&apos;&#x0D;&#x0A;- Renamed element: &apos;String.StringReverseWithoutSpecialCharacter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StringReverse&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;String{StringReverse.java[StringReverse" matchStrategy="1" name="StringReverseWithoutSpecialCharacter" qualified="false" references="true" similarDeclarations="false" stamp="1634896762850" textual="false" version="1.0"/>
+</session>

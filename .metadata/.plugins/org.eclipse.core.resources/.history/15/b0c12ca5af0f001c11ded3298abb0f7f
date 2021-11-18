@@ -1,0 +1,16 @@
+package String;
+
+public class CheckofwordOccureAsAprefixOfAnyWordinASentence {
+
+	public int isPrefixWord(String sentence,String searchWord)
+	{
+		String[] words=sentence.split(" ");
+		for(int i=0;i< words.length;i++)
+		{
+			 if (words[i - 1].startsWith(searchWord)) {
+	                return i;
+	            }
+		}
+		return -1;
+	}
+}

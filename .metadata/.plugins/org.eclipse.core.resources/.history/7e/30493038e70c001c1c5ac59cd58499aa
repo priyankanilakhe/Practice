@@ -1,0 +1,35 @@
+package Array;
+
+import java.util.Arrays;
+
+public class MaximumUnitsONATruck {
+
+	
+	public static int maximumUnitsOnATruck(int[][] boxes,int truckSize)
+	{
+		Arrays.sort(boxes,(a,b)->b[1]-a[1]);
+		int maxUnitOfBoxes=0;
+		for(int[] box:boxes)
+		{
+			int numberOfBoxes=box[0];
+			int numberOfUnits=box[1];
+			if(truckSize >= numberOfBoxes)
+			{
+				maxUnitOfBoxes += numberOfBoxes *numberOfUnits;
+				truckSize -= numberOfBoxes;
+			}
+			else{
+				maxUnitOfBoxes += truckSize*numberOfUnits;
+				return maxUnitOfBoxes;
+			}
+		}
+	return maxUnitOfBoxes;
+	}
+	
+	public static void main(String[] args)
+	{
+		int arr[][]= {{5,10},{2,5},{4,7},{3,9}};
+		System.out.println(maximumUnitsOnATruck(arr,10));
+	}
+	
+}

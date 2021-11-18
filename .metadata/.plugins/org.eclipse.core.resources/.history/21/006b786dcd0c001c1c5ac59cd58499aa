@@ -1,0 +1,41 @@
+package Array;
+
+import java.util.Arrays;
+
+public class partitionArrayIntoThreePartswithEqualSum {
+
+	public static boolean partitionArrayintothreeParts(int[] arr)
+	{
+		int Arraysum=Arrays.stream(arr).sum();
+		if(Arraysum%3 != 0) return false;
+		
+		int partision=0; int sum=0; ;int partionValue=Arraysum/3;
+		for(int i=0;i<arr.length;i++)
+		{
+			sum+=arr[i];
+			if(sum == partionValue)
+			{
+				++partision;
+				sum=0;
+			}
+			if(partision >= 3 && sum==0) return true;
+		}
+		return false;
+		/*int sum = Arrays.stream(A).sum(), part = 0, average = sum / 3, cnt = 0;
+        for (int a : A) {
+            part += a;
+            if (part == average) { // find the average: sum / 3
+                ++cnt; // find an average, increase the counter.
+                part = 0; // reset part.
+            }
+        }
+        return cnt >= 3 && sum % 3 == 0;*/
+	}
+	
+	
+	public static void main(String[] arg)
+	{
+		int arr[]={3,3,6,5,-2,2,5,1,-9,4};
+		System.out.println(partitionArrayintothreeParts(arr));
+	}
+}

@@ -1,0 +1,19 @@
+package Recurssion;
+
+public class Recurssion1 {
+	
+	static int print(int n)
+	{
+	    if (n > 4000)
+	        return;
+	    System.out.println(n);
+	    print(2*n);
+	    System.out.println(n);
+	}
+	 
+	public static void main(String[] args)
+	{
+	   System.out.println(print(1000));
+	}
+
+}

@@ -1,0 +1,41 @@
+package Medium.Array;
+
+public class DotProductofTwoSparseVectors {
+
+	/*public static int TwoDArrayProducts(int[] arr1,int[] arr2)
+	{
+		if(arr1.length != arr2.length) return 0;
+		
+		int product=0;
+		for(int i=0;i<arr1.length;i++)
+		{
+			if(arr1[i] < 0|| arr2[i] < 0) return 0;
+			product += arr1[i] * arr2[i];
+		}
+		return product;
+	}*/
+	
+	 private int[] array;
+
+	 DotProductofTwoSparseVectors(int[] nums) {
+	        array = nums;
+	    }
+
+	    public int dotProduct(DotProductofTwoSparseVectors vec) {
+	        int result = 0;
+
+	        for (int i = 0; i < array.length; i++) {
+	            result += array[i] * vec.array[i];
+	        }
+	        return result;
+	    }   
+	
+	public static void main(String[] args)
+	{
+		int[] arr1={0,1,0,0,2,0,0};
+		int[] arr2={1,0,0,0,3,0,4};
+	//	System.out.println(TwoDArrayProducts(arr1,arr2));
+		DotProductofTwoSparseVectors vc=new DotProductofTwoSparseVectors(arr1);
+		System.out.println(vc.dotProduct(vc));
+	}
+}

@@ -20,7 +20,7 @@ public class LeadersInArray {
 	//Optimized solution 
 	void printLeaders1(int arr[], int size)
     {
-        int max_from_right =  arr[size-1];
+        int max_from_right =  arr[arr.length-1];
   
         /* Rightmost element is always leader */
         System.out.print(max_from_right + " ");

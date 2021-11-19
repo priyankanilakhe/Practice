@@ -31,6 +31,7 @@ public class LeadersInArray {
             {          
             max_from_right = arr[i];
             System.out.print(max_from_right + " ");
+            
             }
         } 
     }

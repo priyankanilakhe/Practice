@@ -48,11 +48,9 @@ public class ContainsNearbyDuplicate {
 	            if(i > k) set.remove(nums[i-k-1]); //remove element if its distance to nums[i] is not lesser than k
 	            if(!set.add(nums[i])) return true; //because all still existed elements is closer than k distance to the num[i], therefore if the add() return false, it means there's a same value element already existed within the distance k, therefore return true.
 	        }
-	       
-	        return false;
+	     	        return false;
 	 }
-	
-	public boolean containsNearbyDuplicate2(int[] nums, int k) {
+	public boolean containsNearbyDuplicate2(int[] nums,int k) {
 	    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		
 		for(int i = 0; i <  nums.length; i++) {
@@ -64,5 +62,6 @@ public class ContainsNearbyDuplicate {
 		
 		return false;
 	}
+	
 }
 

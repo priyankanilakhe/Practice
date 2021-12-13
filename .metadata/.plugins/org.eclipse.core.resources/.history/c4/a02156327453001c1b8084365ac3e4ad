@@ -1,0 +1,23 @@
+package Queue;
+
+public class MovingAverageFromDataStream {
+	
+	public void movingAverage(int[] arr,int k)
+	{
+		int sum=0;
+		double avg=0;
+		for(int i=0;i<k;i++)
+		{
+			sum+=arr[i];
+			avg=sum/i;
+			System.out.println(" Avg :"+avg);
+		}
+		for(int i=k;i<arr.length;i++)
+		{
+			sum+= arr[i]-arr[i-k];
+			avg=sum/3;
+			System.out.println(" Avg :"+avg);
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+package LinkedList;
+
+public class RemoveDuplicatesFromSortedLinkedList {
+	
+	class Node
+	{
+		int data;
+		Node next;
+		Node(int data)
+		{
+			this.data=data;
+			next=null;
+		}
+	}
+	
+	public void push(Node head)
+	{
+		Node newNode=head;
+		newNode.next=head;
+		head=newNode;
+	}
+	
+	public Node PrintNode(Node head)
+	{
+		Node temnode=head;
+		while(temnode != null)
+		{
+			System.out.println(temnode.data+"->");
+			temnode=temnode.next;
+		}
+		return temnode;
+		return head;
+	}
+
+}

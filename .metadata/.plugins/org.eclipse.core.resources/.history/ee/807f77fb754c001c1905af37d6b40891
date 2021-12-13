@@ -1,0 +1,33 @@
+package LinkedList;
+
+public class GetDecimalValue {
+	public int getDecimalValue(Node head) {
+	        int num = head.val;
+	        while (head.next != null) {
+	            num = (num << 1) | head.next.val;
+	            head = head.next;    
+	        }
+	        return num;
+	}
+	 public int getDecimalValue1(Node head) {
+	        int num = head.val;
+	        while (head.next != null) {
+	            num = num * 2 + head.next.val;
+	            head = head.next;    
+	        }
+	        return num;
+	    }
+	 public int getDecimalValue(ListNode head) {
+	       int sum = 0;
+	        
+	        while (head != null){
+	            sum *= 2;
+	            sum += head.val;
+	            head = head.next;
+	        }
+	        return sum;
+	    }
+	
+	public static void main(String[] args){}
+}
+

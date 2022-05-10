@@ -1,4 +1,4 @@
-/*
+	/*
  * 696. Count Binary Substrings
 Easy
 
@@ -45,19 +45,14 @@ public static void main(String[] args)
 {
 	Scanner s= new Scanner(System.in);
 	int n = s.nextInt();
+	System.out.println(n);
 	
 	// With array
-	int dp0[]=new int[n+1];
-	int dp1[] =new int[n+1];
-	dp0[1]=1;
-	dp1[1]=1;
-	for(int i=2;i <= n; i++)
-	{
-		dp0[i] = dp1[i-1];
-		dp1[i] = dp1[i-1] + dp0[i-1];
-	}
-	System.out.println(dp1[n]+dp0[n]);
-	
+	/*
+	 * int dp0[]=new int[n+1]; int dp1[] =new int[n+1]; dp0[1]=1; dp1[1]=1; for(int
+	 * i=2;i <= n; i++) { dp0[i] = dp1[i-1]; dp1[i] = dp1[i-1] + dp0[i-1]; }
+	 * System.out.println(dp1[n]+dp0[n]);
+	 */
 	// Without Array
 	int ocZeros = 1;
 	int ocones=1;

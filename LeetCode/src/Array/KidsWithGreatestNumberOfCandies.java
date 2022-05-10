@@ -75,7 +75,7 @@ public class KidsWithGreatestNumberOfCandies {
 		return result;
 	}
 	public static void main(String[] args){
-		int[] arr={4,2,19,19,2};
+		int[] arr={2,3,5,1,3};
 		System.out.println(Arrays.toString(GreatestNumberOfCandies(arr,15)));
 	}
 }

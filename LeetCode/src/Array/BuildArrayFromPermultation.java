@@ -47,7 +47,7 @@ public class BuildArrayFromPermultation {
 
 	public static void main(String[] args)
 	{
-		int[] arr={0,2,5,1,4,3};
+		int[] arr={0,2,1,5,4,3};
 		System.out.println(Arrays.toString(arr));
 		System.out.println(Arrays.toString(buildArray_Approch2(arr)));
 		

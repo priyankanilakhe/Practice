@@ -30,7 +30,6 @@ Input: nums = [1,1,2,3]
 Output: [1,3,3]
  */
 package Array;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

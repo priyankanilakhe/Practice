@@ -55,12 +55,22 @@ public class ConcatenationOFArray {
 		}
 		return ans;
 	}
+	public static int[] concatination(int arr[])
+	{
+		int newarr[]=new int[arr.length *2];
+		 System.arraycopy(arr, 0, newarr, 0, arr.length);
+		 System.arraycopy(arr, 0, newarr, arr.length, arr.length);
+
+		return newarr;
+		 
+		
+	}
 	public static void main(String[] args)
 	{
 		int[] arr={0,2,5,1,4,3};
 		System.out.println(Arrays.toString(arr));
 		System.out.println(Arrays.toString(getConcatenatioArray(arr)));
-		
+		System.out.println(Arrays.toString(concatination(arr)));
 	}
 
  }

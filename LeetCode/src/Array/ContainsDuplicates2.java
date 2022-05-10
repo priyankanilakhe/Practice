@@ -49,4 +49,23 @@ public class ContainsDuplicates2 {
 	}
 	return false;
 	}
+	
+	
+	@SuppressWarnings("static-access")
+	public static String duplicate(String s) {
+		StringBuilder sb= new StringBuilder();
+		for(int i=1,j=0;i<s.length();i++,j++) {
+			System.err.println(s.substring(i, s.length()));
+			System.out.println(s.valueOf(s.charAt(i-1)));
+			if((s.substring(i, s.length()).contains(s.valueOf(s.charAt(i-1))))) {
+				s.replaceAll(s.valueOf(s.charAt(i)),"");
+				sb.append(s.charAt(i));
+			}
+		}
+		return s.valueOf(sb);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(duplicate("Apple"));
+	}
 }

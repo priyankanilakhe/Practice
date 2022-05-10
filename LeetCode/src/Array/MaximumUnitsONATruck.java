@@ -52,6 +52,7 @@ public class MaximumUnitsONATruck {
 	public static int maximumUnitsOnATruck(int[][] boxes,int truckSize)
 	{//Arrays.sort(boxes,(a,b)->Integer.compare(b[1],a[1]));
 		Arrays.sort(boxes,(a,b)->b[1]-a[1]);
+		System.out.println(Arrays.deepToString(boxes));
 		int maxUnitOfBoxes=0;
 		for(int[] box:boxes)
 		{
@@ -72,7 +73,7 @@ public class MaximumUnitsONATruck {
 	
 	public static void main(String[] args)
 	{
-		int arr[][]= {{5,10},{2,5},{4,7},{3,9}};
+		int arr[][]= {{5,10},{2,50},{4,7},{3,90}};
 		System.out.println(maximumUnitsOnATruck(arr,10));
 	}
 	

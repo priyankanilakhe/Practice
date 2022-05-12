@@ -16,6 +16,20 @@ public class FindDuplicateChar {
 		return duplicate.replace(" ", "");
 	}
 
+	public static void findduplicate(String word) {
+
+        char arr[] = word.toCharArray();
+        StringBuilder s = new StringBuilder();
+        for (char c : arr) {
+            int index = s.indexOf("" + c);
+            if (index != -1) {
+                System.out.println("duplicate character "+c);
+            } else {
+                s.append(c);
+            }
+        }
+
+    }
 	/*
 	 * Binary Search Note that the key is to find an integer in the array [1, 2,..,
 	 * n] instead of finding an integer in the input array.
